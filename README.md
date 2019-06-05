@@ -34,7 +34,31 @@ cra-boilerplate/
 
 ### Before starting
 
-Update the theme file to line up with the design details provided by the designer and the design files.
+The `./src/theme/index.ts` should be the starting point. You can customize the theme according to the project designs starting from the font-face to the colors and Heading tags.
+
+```typescript
+// You can change the primary color here and it will take effect in all
+// the components using primary variant.
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#ff4400',
+    },
+  },
+});
+```
+
+For more information https://material-ui.com/customization/palette/
+
+### Reach Router
+
+In order to use `path="/"` in a component like so `<Home path="/" />`, remember to include `RouteComponentProps` as a props type def so that Typescript can be happy. For example the home page
+
+```tsx
+export const Home: React.FC<RouteComponentProps> = () => {
+  ...
+}
+```
 
 #### Code Style
 
