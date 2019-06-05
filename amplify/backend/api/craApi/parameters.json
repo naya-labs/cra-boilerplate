@@ -1,0 +1,4 @@
+{
+    "AppSyncApiName": "craApi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST"
+}

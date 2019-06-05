@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "cra-boilerplate-dev-20190604220938-authRole",
+            "UnauthRoleArn": "arn:aws:iam::675309137591:role/cra-boilerplate-dev-20190604220938-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::675309137591:role/cra-boilerplate-dev-20190604220938-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "cra-boilerplate-dev-20190604220938-deployment",
+            "UnauthRoleName": "cra-boilerplate-dev-20190604220938-unauthRole",
+            "StackName": "cra-boilerplate-dev-20190604220938",
+            "StackId": "arn:aws:cloudformation:us-east-1:675309137591:stack/cra-boilerplate-dev-20190604220938/f91e0a30-8736-11e9-bd1a-0af7a73fd784"
+        }
+    }
+}
