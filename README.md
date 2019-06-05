@@ -1,10 +1,8 @@
-<div align="center">
-  Simple CRA Boilerplate.
-</div>
+# Simple CRA Boilerplate
 
 A boilerplate with all the needs packages to kickstart a project and to standardize codebase across project. This helps in easier developer and client on-boarding.
 
-#### Technologies
+## Technologies
 
 - [Material-UI](https://material-ui.com/)
 - [Pretteir](https://prettier.io/)
@@ -16,7 +14,7 @@ A boilerplate with all the needs packages to kickstart a project and to standard
 - [Axios](https://github.com/axios/axios)
 - [Lint Staged](https://github.com/okonet/lint-staged)
 
-#### Folder structure
+### Folder structure
 
 ```sh
 cra-boilerplate/
@@ -48,7 +46,7 @@ const theme = createMuiTheme({
 });
 ```
 
-For more information https://material-ui.com/customization/palette/
+For more information checkout [Palette](https://material-ui.com/customization/palette/)
 
 ### Reach Router
 
@@ -60,19 +58,40 @@ export const Home: React.FC<RouteComponentProps> = () => {
 }
 ```
 
-#### Code Style
+### Code Style
 
 We run Prettier on-commit using lint-staged.
 
-#### Reason for Using Material-UI
+### Reason for Using Material-UI
 
 Before material-ui v4, in order to start a project, we would use `styled-components`, `styled-system` and another react framework like `Boostrap` or `Ant.design`.
 With the intergration of better theme system, better CSS-in-JS solution and Material System, it helps replace all the libraries above use one unified framework.
 
-##### Rules
+_NOTE_
+When working with Material-UI and typescript and you want to use `makeStyles` hook, you will also need to include a `createStyles(styles) => styles` function to it. This helps in the TypeScript type widening. For example.
 
-- **Typescript**: All new files created must use typescript.
-  ...more coming
+```jsx
+import { makeStyles, createStyles } from '@material-ui/styles';
+
+const styles = makeStyles((theme: Theme) => createStyles({
+  root: {
+    backgroundColor: theme.color.red,
+  },
+}));
+
+function MyComponent {
+  const classes = useStyles();
+  return <div className={classes.root} />;
+}
+
+export default MyComponent;
+```
+
+You can read more about this in the [MUI Docs](https://material-ui.com/styles/api/#createstyles-styles-styles)
+
+### Typescript
+
+Use Typescript for any new file created. If you need a reference point for how to use typescript with react here it a cheatsheet that is really helpful [React-Typescript Cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 
 ### First time setup
 
