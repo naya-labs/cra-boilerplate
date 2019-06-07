@@ -1,6 +1,6 @@
 # Simple CRA Boilerplate
 
-A boilerplate with all the needs packages to kickstart a project and to standardize codebase across project. This helps in easier developer and client on-boarding.
+A boilerplate with all the needed packages to kickstart a project and to standardize codebase across project. This helps in easier developer and client on-boarding.
 
 ## Technologies
 
@@ -91,7 +91,7 @@ You can read more about this in the [MUI Docs](https://material-ui.com/styles/ap
 
 ### Typescript
 
-Use Typescript for any new file created. If you need a reference point for how to use typescript with react here it a cheatsheet that is really helpful [React-Typescript Cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
+Use Typescript for any new file created. If you need a reference point for how to use typescript with react here is a cheatsheet that is really helpful [React-Typescript Cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet)
 
 ### First time setup
 
